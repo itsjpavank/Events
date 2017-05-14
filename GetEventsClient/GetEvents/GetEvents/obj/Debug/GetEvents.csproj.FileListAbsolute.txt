@@ -1,0 +1,12 @@
+D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\bin\Debug\GetEvents.exe.config
+D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\bin\Debug\GetEvents.exe
+D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\bin\Debug\GetEvents.pdb
+D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\bin\Debug\Newtonsoft.Json.dll
+D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\bin\Debug\Newtonsoft.Json.xml
+D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\obj\Debug\GetEvents.exe
+D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\obj\Debug\GetEvents.pdb
+D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
+D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.pdb
+D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.pdb
