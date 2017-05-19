@@ -10,3 +10,4 @@ D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEve
 D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
 D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.pdb
 D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.pdb
+D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\obj\Debug\GetEvents.csprojResolveAssemblyReference.cache

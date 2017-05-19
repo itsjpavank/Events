@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace GetEvents
 {
@@ -24,7 +25,7 @@ namespace GetEvents
         private static string clientId;
         private static string aadInstance;
         private static string tenant;
-        private int eventsCount;
+
         static void Main(string[] args)
         {
             _apiBaseAddress = ConfigurationManager.AppSettings["ApiBaseAddress"];
@@ -33,11 +34,10 @@ namespace GetEvents
             tenant = ConfigurationManager.AppSettings["Tenant"];
             authority = String.Format(CultureInfo.InvariantCulture, aadInstance, tenant);
             apiResourceId = ConfigurationManager.AppSettings["ApiResourceId"];
-
             var result = GetEvents();
         }
 
-        static public string GetEvents()
+        static public object GetEvents()
         {
 
             // Reinitializing the HttpClient and setting the Time Out value in order to allow multiple test run in different instances
@@ -61,29 +61,47 @@ namespace GetEvents
                 throw ex;
             }
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", result.AccessToken);
-
-
             string requestUrl = new Uri(_apiBaseAddress).ToString();
-            List<string> productFilters = new List<string>() { "Cloud Platform", "Office" };
-            string productFilter = GenerateFilterString("product", productFilters);
+
+            Dictionary<string, string> queryStrings = new Dictionary<string, string>();
+            var startDate = DateTime.UtcNow.Date;
+            queryStrings.Add("dateFloor", startDate.ToString());
+            queryStrings.Add("isPublishable", "true");
+            queryStrings.Add("skipCount", "0");
+            queryStrings.Add("SortBy", "StartDate");
+            queryStrings.Add("SortOrder", "asc");
+
+            //Additonal filters
+            //queryStrings.Add("dateCeil", startDate.AddDays(30).AddHours(23).AddMinutes(59).AddSeconds(59).ToString());
+            //queryStrings.Add("eventType", "Live");
+            //queryStrings.Add("resultCount", "16");
+            
+            //Fltering for facet based appraoech
+            //List<string> productFilters = new List<string>() { "Cloud Platform", "Office" };
+            //string productFilter = GenerateFilterString("product", productFilters);
+
             var responseString = string.Empty;
 
             Task.Run(async () =>
             {
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                httpResponse = await client.GetAsync(requestUrl + "api/Search?RequestId=" + requestId + productFilter);
+                httpResponse = await client.GetAsync(requestUrl + "api/Search?RequestId=" + requestId + queryStrings);
 
                 if (httpResponse.IsSuccessStatusCode)
                 {
-                    responseString = await httpResponse.Content.ReadAsStringAsync();                    
+                    responseString = await httpResponse.Content.ReadAsStringAsync();
                 }
 
             }).GetAwaiter().GetResult();
 
-            return responseString;
+           
+            var jsonresult = JsonConvert.DeserializeObject<SearchResponse>(responseString);
+
+            return jsonresult;
 
         }
+
 
         /// <summary>
         /// Common Method to generate the Filter String/URL string based on the Filter Attribute
@@ -103,5 +121,6 @@ namespace GetEvents
             filter += recordCount > 0 ? "&ResultCount=" + recordCount : string.Empty;
             return filter;
         }
+
     }
 }
