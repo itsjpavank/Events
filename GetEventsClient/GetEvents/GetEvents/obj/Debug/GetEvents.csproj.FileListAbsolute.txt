@@ -11,3 +11,16 @@ D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEve
 D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.pdb
 D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.pdb
 D:\AAwork\Marketing\ModernEvents\Code\Utilities\GetEventsClient\GetEvents\GetEvents\obj\Debug\GetEvents.csprojResolveAssemblyReference.cache
+C:\Users\pavankj\Documents\GitHub\Events\GetEventsClient\GetEvents\GetEvents\bin\Debug\GetEvents.exe.config
+C:\Users\pavankj\Documents\GitHub\Events\GetEventsClient\GetEvents\GetEvents\bin\Debug\GetEvents.exe
+C:\Users\pavankj\Documents\GitHub\Events\GetEventsClient\GetEvents\GetEvents\bin\Debug\GetEvents.pdb
+C:\Users\pavankj\Documents\GitHub\Events\GetEventsClient\GetEvents\GetEvents\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\pavankj\Documents\GitHub\Events\GetEventsClient\GetEvents\GetEvents\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
+C:\Users\pavankj\Documents\GitHub\Events\GetEventsClient\GetEvents\GetEvents\bin\Debug\Newtonsoft.Json.dll
+C:\Users\pavankj\Documents\GitHub\Events\GetEventsClient\GetEvents\GetEvents\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.pdb
+C:\Users\pavankj\Documents\GitHub\Events\GetEventsClient\GetEvents\GetEvents\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\pavankj\Documents\GitHub\Events\GetEventsClient\GetEvents\GetEvents\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.pdb
+C:\Users\pavankj\Documents\GitHub\Events\GetEventsClient\GetEvents\GetEvents\bin\Debug\Newtonsoft.Json.xml
+C:\Users\pavankj\Documents\GitHub\Events\GetEventsClient\GetEvents\GetEvents\obj\Debug\GetEvents.csprojResolveAssemblyReference.cache
+C:\Users\pavankj\Documents\GitHub\Events\GetEventsClient\GetEvents\GetEvents\obj\Debug\GetEvents.exe
+C:\Users\pavankj\Documents\GitHub\Events\GetEventsClient\GetEvents\GetEvents\obj\Debug\GetEvents.pdb

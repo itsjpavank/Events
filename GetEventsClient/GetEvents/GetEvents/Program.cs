@@ -34,7 +34,7 @@ namespace GetEvents
             tenant = ConfigurationManager.AppSettings["Tenant"];
             authority = String.Format(CultureInfo.InvariantCulture, aadInstance, tenant);
             apiResourceId = ConfigurationManager.AppSettings["ApiResourceId"];
-            var result = GetEvents();
+            var result = GetEvents();            
         }
 
         static public object GetEvents()
@@ -97,6 +97,12 @@ namespace GetEvents
 
            
             var jsonresult = JsonConvert.DeserializeObject<SearchResponse>(responseString);
+
+            Console.WriteLine("Total Events :" + jsonresult.TotalResults);
+            Console.WriteLine();
+            Console.WriteLine("First Event Title:" + jsonresult.Events[0].Title.ToString());
+            Console.WriteLine();
+            Console.WriteLine("First Event Description:" + jsonresult.Events[0].Description.ToString());
 
             return jsonresult;
 
